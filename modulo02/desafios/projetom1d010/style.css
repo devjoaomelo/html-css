@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(/modulo02/desafios/projetom1d010/fontes/idroid.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url(/modulo02/desafios/projetom1d010/fontes/BebasNeueBold-7B9LE.ttf);
+}
+
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url(/modulo02/desafios/projetom1d010/fontes/BebasNeueBook-d9A1l.ttf);
+}
+
+header{
+    background: linear-gradient(0deg, rgba(4,67,31,1) 0%, rgba(38,157,90,1) 100%);
+    min-height: 170px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    font-family: 'BebasNeueBold';
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: black 1px 1px 1px;
+}
+
+header > h2{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: auto;
+    padding-right: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 600px;
+    text-shadow: black 1px 1px 1px;
+
+}
+nav{
+    background-color:rgba(4,67,31,1);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+
+}
+
+nav > a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(157, 255, 217);
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav > a:hover{
+    background-color: rgb(29, 175, 0);
+    color: black;
+    
+    padding: 10px;
+}
+
+body{
+    background-color: #ebe5c5;
+}
+article{
+    background-color: white;
+    padding-top: 20px;
+}
+
+article > h1{
+    color: rgb(0, 56, 0);
+    font-family: 'idroid';
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+article >h2{
+    color:rgba(0, 56, 0, 0.712);
+    font-family: 'idroid';
+    font-size: 21px;
+    font-weight: lighter;
+    background: linear-gradient(90deg, rgba(131,225,173,1) 0%, rgba(253,255,254,1) 100%);
+}
+p{
+    text-indent: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight:lighter;
+    line-height: 170%;
+}
+main p {
+    margin: 20px 0px;
+    text-align: center;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+p > strong{
+    color: rgb(0, 56, 0);
+}
+
+a.externo{
+    color: rgb(0, 56, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, rgba(131,225,173,1) 100%, rgba(255,255,255,1) 100%);
+    text-decoration: none;
+    padding: 2px 4px;
+}
+a.externo:hover{
+    text-decoration: underline;
+    color: rgb(1, 87, 1);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 10px 20px 2px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+main img{
+    width: 100%;
+    display: auto;
+    margin-right: 10px;
+    
+}
+
+main img.pequena{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+div.video{
+    background-color: rgba(0, 56, 0, 0.712);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: #83e1ad;;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3{
+    color: white;
+    background-color:rgba(0, 56, 0, 0.712);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+aside > p{
+    padding: 2px 7px 0px 7px;
+    text-align: justify;
+}
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 2.5%;
+    list-style-type: '\2714\00A0\00A0';
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 7px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}

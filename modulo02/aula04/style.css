@@ -1,0 +1,26 @@
+/*
+em HTML é id = em CSS é #
+em HTML é classe = em CSS é .
+*/
+
+
+
+body{ 
+    background-color: rgb(201, 247, 201);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: rgb(255, 106, 6);
+
+}
+
+h2{
+    color: rgb(255, 158, 47);
+}
+
+ #principal{
+    color: black;
+    background-color: aliceblue;
+}

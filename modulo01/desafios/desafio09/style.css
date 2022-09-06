@@ -1,0 +1,26 @@
+.parent{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+
+p{
+width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back{
+    height: 35px;
+    width: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto{
+    text-align: center;
+}

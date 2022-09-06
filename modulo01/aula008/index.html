@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase tamos um <b>termo em negrito</b> usando a tag B (NAO semântica)</p>
+    <p>nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i><!--ctrl+shift+p - wrap --> usando a tag I (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag em (semântica)</p>
+    <h2>Texto Marcado</h2>
+    <p><mark style="background-color: rgb(15, 248, 54)">Podemos criar também um texto marcado usando a tag MARK.</mark></p>
+    <p>e no outro parágrafo, temos outro <mark style="background-color: red">texto marcado</mark> no final</p>
+    <h2>Texto deletado</h2>
+    <p><del>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado.</del></p>
+    <h2>texto inserido</h2>
+    <p><ins>Podemos marcar um texto como inserido para dar um ênfase e indicar que ele foi adicionado depois</ins></p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 (sup)</p>
+    <h2>Texto subscrito</h2>
+    <p>para inserir coisas do tipo H<sub>2</sub>0 (sub)</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste)</code> é escrito
+        em linguagem JavaScript</p>
+    
+    <pre> <!--pre mantem a formatação do texto-->
+        <code> <!--code deixa com a fonte like a code-->
+num = int(input('Digite um Número:')
+if num % 2 == 0:
+    print(f'É um número par')
+else:
+    print(f'É um número impar')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <!--<q> é uma citação diferente de aspas-->
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>  
+    <h2>Citações completas</h2>
+    <p>Segundo João Melo em  seu twitter:</p>
+    <blockquote cite="https://twitter.com/fodjao/status/1564083399631028225">
+        <q>como chegamos nessa em meu brasil</q>
+    </blockquote>
+    <h2>Abreviações</h2>
+    <!--Mostra popups ao passar o mouse em cima-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+</body>
+</html>

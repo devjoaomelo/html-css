@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        div{
+            display: inline-block; /*Tudo na mesma linha*/
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        div:hover{
+            background-color: yellow; /*Configuração de estado, passei o mouse ela muda de cor*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto Escondido</p>
+    </div>
+    <div>Alo</div>
+</body>
+</html>

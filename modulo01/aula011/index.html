@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <!--source media type, adaptando o tamanho da imagem ao tamanho da tela alterando a imagem quando chega no max width-->
+        <source media="(max-width: 750px )" srcset="/modulo01/aula011/imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/modulo01/aula011/imagens/m.png" type="image/png">
+        <img src="/modulo01/aula011/imagens/g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload ="metadata" src="/modulo01/aula011/Kid-Cudi-Day-_N_-Nite-_Official-Music-Video_.mp3" controls autoplay loop></audio>  
+    </audio>
+<!--Usando o incorporar do youtube-->
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/lYurKQG2_cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</body>
+</html>
