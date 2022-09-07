@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        tr{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+
+        .head{
+            background-color:gray ;
+            color: white;
+            font-weight: bolder;
+        }
+
+        td#tamanho{
+            width: 50px;  
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .media{
+            text-align: left;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        .textoesquerda{
+            text-align: left;
+
+        }
+        tr#reprovado{
+            background-color: rgba(248, 52, 52, 0.993);
+            color: white;
+        }
+
+        td#aprovado{
+            background-color: green;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="head">
+            <td rowspan="2">Área</td>
+            <td rowspan="2">Disciplinas</td>
+            <td id="tamanho" colspan="2">Notas</td>
+            <td rowspan="2">Média</td>
+        </tr>
+        <tr>
+            <td id="tamanho">Nota 1</td>
+            <td id="tamanho">Nota 2</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="genero"><strong>Exatas</strong></td>
+            <td id="aprovado" class="textoesquerda">Matemática</td>
+            <td id="aprovado">7.0</td>
+            <td id="aprovado">7.0</td>
+            <td id="aprovado">7.0</td>
+        </tr>
+        <tr>
+            <td id="aprovado" class="textoesquerda">Física</td>
+            <td id="aprovado">4.0</td>
+            <td id="aprovado">7.0</td>
+            <td id="aprovado">5.5</td>
+        </tr>
+        <tr id="reprovado">
+            <td class="textoesquerda">Química</td>
+            <td >2.0</td>
+            <td>3.0</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td id="aprovado" class="textoesquerda">Biologia</td>
+            <td id="aprovado">10</td>
+            <td id="aprovado">7.0</td>
+            <td id="aprovado">8.5</td>
+        </tr>
+        <tr>
+            <td class="media" colspan="4">Média de Exatas</td>
+            <td class="head">5.9</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>Humanas</strong></td>
+            <td class="textoesquerda">História</td>
+            <td>10.0</td>
+            <td>10.0</td>
+            <td>10.0</td>
+        <tr>
+            <td class="textoesquerda">Geografia</td>
+            <td>10.0</td>
+            <td>10.0</td>
+            <td>10.0</td>
+        </tr>
+        <tr>
+            <td class="media" colspan="4">Média de Humanas</td>
+            <td class="head">10.0</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
