@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;                      
+}
+
+
 *{
     margin: 0%;
     padding: 0%;
+    font-size: 1em;
 }
 
 
 
 html, body{
+    font-family:var(--fonte1);
     background-color: antiquewhite;
     min-height: 100%;
 }
@@ -19,6 +30,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw; /*Maneira de corrigir tamanho sem saber mediaq */
 }
 
 header > p {
@@ -28,18 +41,28 @@ header > p {
 a{
     text-decoration: none;
     font-weight: bolder;
+    color: white;
 }
 
 a:hover{
     text-decoration: underline;
+    color: gold;
+    transition: 0.3s;
 }
 
 
 section{
+    font-size: 5vw;
     padding-left: 30px;
     line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -51,11 +74,29 @@ section.normal{
 section.imagem{
     background-color: rgb(75, 68, 68);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.151);
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+    display: inline-block;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right top;
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+
 }
 
 footer{
